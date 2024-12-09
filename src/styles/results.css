@@ -1,0 +1,24 @@
+.results-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--textarea-bg-light);
+  color: var(--textarea-color-light);
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 100%;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Для темной темы, когда переключатель активирован */
+.theme-switch__input:checked ~ main .results-container {
+  background-color: var(--textarea-bg-dark);
+  color: var(--textarea-color-dark);
+  border-color: #555;
+}
+
+li {
+  list-style-type: none;
+}
