@@ -17,27 +17,19 @@ To run the project, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
  git clone https://github.com/yourusername/nutrition-analyzer.git
-   ```
 
 2. Navigate to the project directory:
 
-   ```bash
    cd nutrition-analyzer
-   ```
 
 3. Install dependencies:
 
-   ```bash
    npm install
-   ```
 
 4. Start the project:
 
-   ```bash
    npm start
-   ```
 
 5. Go to [http://localhost:3000](http://localhost:3000) to view the app in action.
 
