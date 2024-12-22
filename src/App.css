@@ -157,7 +157,6 @@ textarea {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-/* Для темной темы, когда переключатель активирован */
 .theme-switch__input:checked ~ main textarea {
   background-color: var(--textarea-bg-dark);
   color: var(--textarea-color-dark);

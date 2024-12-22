@@ -1,40 +1,45 @@
 :root {
-  /* Colors */
-  --loader-color: #fff;
-  --font-family: "Roboto Condensed", sans-serif;
-  --font-family-title: "Merriweather", serif;
+  /* ----------------- Colors ----------------- */
+  /* Base Colors */
   --bg: white;
-  --button-bg: lightSlateGray;
-  --button-font-family: "Merriweather", serif;
   --text: rgb(3, 66, 98);
-  --gradDark: hsl(197, 23%, 94%);
-  --gradLight: hsl(60, 0%, 41%);
-  --dark-gradDark: hsl(198, 44%, 11%);
-  --dark-gradLight: hsl(198, 39%, 29%);
+  --loader-color: #fff;
+
+  /* Label Colors */
   --label-bg: slateGray;
   --label-hover-bg: lightSlateGray;
-  --light-bg-image: url("../Images/day.jpg");
-  --dark-bg-image: url("../Images/night.jpg");
+  --label-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+
+  /* Icon Colors */
   --icon-sun-color: orange;
   --icon-moon-color: lightSlateGray;
   --icon-active-moon-color: turquoise;
+
+  /* Circle Colors */
   --circle-color: #add8e6;
-  --circle-hover-color: lighten(lightBlue, 10%);
   --circle-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
-  --label-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+
+  /* Textarea Colors */
   --textarea-bg-light: #fff;
   --textarea-bg-dark: #333;
   --textarea-color-light: #000;
   --textarea-color-dark: #fff;
+
   /* Light Theme Colors */
   --cta-bg-light: #6bd5f8;
-  --cta-text-light: white;
-  --cta-shadow-light: rgba(0, 0, 0, 0.382);
-  --cta-hover-shadow-light: #fbc638;
 
   /* Dark Theme Colors */
   --cta-bg-dark: #1e3c66;
-  --cta-text-dark: #ddd;
-  --cta-shadow-dark: rgba(255, 255, 255, 0.2);
-  --cta-hover-shadow-dark: #fbc638;
+
+  /* ----------------- Background Images ----------------- */
+  --light-bg-image: url("../Images/day.jpg");
+  --dark-bg-image: url("../Images/night.jpg");
+
+  /* ----------------- Typography ----------------- */
+  --font-family: "Roboto Condensed", sans-serif;
+  --font-family-title: "Merriweather", serif;
+
+  /* ----------------- Shadows ----------------- */
+  --circle-shadow: -3px 3px 8px rgba(0, 0, 0, 0.4);
+  --label-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
 }

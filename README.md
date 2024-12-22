@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Nutrition Analyzer - Food Insight Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Nutrition Analyzer** is a web application that allows users to analyze the nutritional value of their meals. Users can input a list of ingredients with quantities to receive detailed information about calories, macronutrients, and micronutrients. This application helps users make informed dietary decisions and track their nutritional intake effectively.
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
+- **React**: For building the user interface with components and state management.
+- **useState and useEffect**: For managing state and handling side effects like API calls.
+- **useCallback**: Optimizes API requests, ensuring they are not re-created on every render.
+- **LocalStorage API**: For caching results to minimize redundant API calls and improve performance.
+- **Edamam Nutrition Analysis API**: Fetches detailed nutritional data for a given list of ingredients.
+- **CSS Modules**: Provides scoped and modular styles for components.
 
-### `npm start`
+## Installation and Running
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run the project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+git clone https://github.com/yourusername/nutrition-analyzer.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+   cd nutrition-analyzer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the project:
 
-### `npm run eject`
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Go to [http://localhost:3000](http://localhost:3000) to view the app in action.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Functionality
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Home Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The Home Page greets users with a brief introduction and a form for entering ingredients and quantities. A **"Submit"** button triggers the analysis process.
 
-## Learn More
+### Results Section
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The Results Section provides detailed nutritional insights, including:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Calories**: Total calorie count for the ingredients.
+- **Macronutrients**: Breakdown of fats, carbohydrates, and proteins.
+- **Micronutrients**: Information on vitamins and minerals.
 
-### Code Splitting
+Cached results are instantly displayed for repeated queries, improving performance and user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **MainPage**: The entry point of the app, where users input their list of ingredients.
+- **NutritionAnalysis**: Responsible for fetching, validating, and submitting data to the Edamam API.
+- **Results**: Displays a detailed breakdown of nutritional content and serving suggestions.
+- **Loader**: Shows a loading animation while the application retrieves data.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## How It Works
 
-### Advanced Configuration
+- **useState**: Manages the state of the application, such as input ingredients, loading status, results, and errors.
+- **useEffect**: Sends API requests when users submit their input or fetches cached results when applicable.
+- **useCallback**: Optimizes performance by avoiding unnecessary re-renders and repeated API call definitions.
+- **LocalStorage API**: Stores cached results for specific ingredient lists, allowing instant retrieval on subsequent searches.
+- **fetch API**: Communicates with the Edamam Nutrition Analysis API to fetch nutritional data for the provided ingredients.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Planned Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **API Integration**: Expand to additional APIs for more comprehensive meal and diet tracking.
+2. **Favorite Analyses**: Enable users to save and export nutritional analyses for future reference.
 
-### `npm run build` fails to minify
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Aleksandr Barabanov
+
+## Contacts
+
+<div>
+  <a href="https://www.linkedin.com/in/aleksandr-barabanov/">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a> 
+  <a href="mailto:barabanov.codes@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+  <a href="https://profile.indeed.com/?hl=en_CA&co=CA&from=gnav-notifcenter">
+    <img src="https://img.shields.io/badge/indeed-003A9B?style=for-the-badge&logo=indeed&logoColor=white" alt="Indeed"/>
+  </a>
+  <a href="https://www.codewars.com/users/Aleksandr-Barabanov">
+    <img src="https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=grey" alt="Codewars"/>
+  </a>
+</div>
+
+© 2024 Nutrition Analyzer
